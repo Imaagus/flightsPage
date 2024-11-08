@@ -23,6 +23,7 @@ To read more about using these font, please visit the Next.js documentation:
 - App Directory: https://nextjs.org/docs/app/building-your-application/optimizing/fonts
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
+
 import icono from "@/media/Icono.png"
 import avioneta from "@/media/Avioneta.jpg"
 import Link from "next/link"
@@ -59,15 +60,22 @@ export function Main() {
       <main>
         <section  
           id="hero"
-          className="w-full py-16 md:py-24 bg-[url('/hero-bg.jpg')] bg-cover bg-center">
-          <div
-            className="container mx-auto px-6 md:px-12 text-center text-primary-foreground">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Vive la Emoción del Vuelo Bautismo</h1>
-            <p className="text-lg md:text-xl mb-8">
+          className="relative w-full py-16 md:py-24">
+          <video  
+            autoPlay 
+            loop 
+            muted 
+            playsInline 
+            className="absolute top-0 left-0 w-full h-full object-cover object-top z-0">
+            <source src="/media/banner.mp4" type="video/mp4" />
+          </video>
+          <div className="relative container mx-auto px-6 md:px-12 text-center z-10">
+            <h1 className="text-black text-4xl md:text-6xl font-bold mb-4">Vive la Emoción del Vuelo Bautismo</h1>
+            <p className="text-black text-lg md:text-xl mb-8">
               Descubre la magia de pilotear una avioneta con un instructor experto.
             </p>
             <Button size="lg">Reservar Ahora</Button>
-          </div>
+        </div>
         </section>
         <section id="about" className="w-full py-16 md:py-24 bg-muted">
           <div className="container mx-auto px-6 md:px-12">
@@ -348,3 +356,4 @@ function Icon(props){
       </iframe>
   );
 }
+
