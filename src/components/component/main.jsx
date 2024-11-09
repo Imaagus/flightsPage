@@ -63,16 +63,16 @@ export function Main() {
             className="absolute top-0 left-0 w-full h-full object-cover object-top z-0">
             <source src="/media/banner.mp4" type="video/mp4" />
           </video>
-          <div className="relative container mx-auto px-6 md:px-12 text-center z-10">
-            <h1 className="text-black text-4xl md:text-6xl font-bold mb-4">Vive la Emoción del Vuelo Bautismo</h1>
+          <div className="relative container mx-auto px-4 sm:px-6 md:px-12 text-center z-10">
+            <h1 className="text-black text-3xl sm:text-4xl md:text-6xl font-bold mb-4">Vive la Emoción del Vuelo Bautismo</h1>
             <p className="text-black text-lg md:text-xl mb-8">
               Descubre la magia de pilotear una avioneta con un instructor experto.
             </p>
             
         </div>
         </section>
-        <section id="about" className="w-full py-16 md:py-24 bg-muted">
-          <div className="container mx-auto px-6 md:px-12">
+        <section id="about" className="w-full py-16 md:py-24 bg-muted px-4 sm:px-8">
+          <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h2 className="text-3xl font-bold mb-4">¿Qué es un Vuelo Bautismo?</h2>
@@ -122,8 +122,8 @@ export function Main() {
             </div>
           </div>
         </section>
-        <section id="experience" className="w-full py-16 md:py-24">
-          <div className="container mx-auto px-6 md:px-12">
+        <section id="experience" className="w-full py-16 md:py-24 px-4 sm:px-8">
+          <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20">
             <h2 className="text-3xl font-bold mb-8 text-center">La Experiencia del Vuelo Bautismo</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
@@ -153,10 +153,10 @@ export function Main() {
           </div>
         </section>
         <section id="contact" className="w-full py-16 md:py-24 bg-muted">
-          <div className="container mx-auto px-6 md:px-12">
+          <div className="container mx-auto px-4 sm:px-6 md:px-12">
             <h2 className="text-3xl font-bold mb-8 text-center">Contacta con Nosotros</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
+              <div className="p-4 sm:p-6 md:p-8">
                 <form ref={form} onSubmit={sendEmail} className="space-y-4">
                   <div>
                     <Label htmlFor="name">Nombre</Label>
@@ -179,9 +179,9 @@ export function Main() {
                   </Button>
                 </form>
               </div>
-              <div className="ml-12">
+              <div className="p-4 sm:p-6 md:p-8">
                 <h3 className="text-2xl font-bold mb-4">Información de Contacto</h3>
-                <div className="space-y-2 space-x-6 flex">
+                <div className="flex flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0">
                   <div className="space-y-6">
                     <div className="flex items-center gap-4">
                       <PhoneIcon className="w-6 h-6 text-primary" />
@@ -201,11 +201,11 @@ export function Main() {
                       </div>
                     </div>
                   </div>
-                  <div className="flex items-center !mt-0">
+                  <div className="flex flex-col order-2 md:order-none">
                     <div>
                       <p className="font-medium">Dirección</p>
                       <p className="text-muted-foreground">500 Av. Figueroa Alcorta, Moron.</p>
-                      <Map className="w-full"/>
+                      <Map className="w-full mt-4 md:mt-0"/>
                     </div>
                   </div>
                 </div>
@@ -215,18 +215,18 @@ export function Main() {
         </section>
       </main>
       <footer className="w-full bg-primary text-primary-foreground py-6 px-6 md:px-12">
-        <div className="container mx-auto flex items-center justify-between">
-          <p className="text-sm">&copy; 2024 Vuelo Bautismo. Todos los derechos reservados.</p>
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-4">
-          <Link href="https://www.instagram.com/vuelosdebautismo.bs.as/" target="_blank" className="hover:underline flex" prefetch={false}>
-          <img src="/media/instagram.png" alt="Icono instagram" className="w-6 h-6 mr-2"/>   
-          @vuelosdebautismo.bs.as
-          </Link>
-          <Link href="https://wa.me/1122223333?text=¡Hola!%20Estoy%20interesado%20en%20el%20vuelo%20bautismo." target="_blank" className="hover:underline flex " prefetch={false}>
-          <img src="/media/whatsapp.png" alt="Icono whatsapp" className="w-6 h-6 mr-2"/>   
-          1122223333
-          </Link>
+            <Link href="https://www.instagram.com/vuelosdebautismo.bs.as/" target="_blank" className="hover:underline flex" prefetch={false}>
+            <img src="/media/instagram.png" alt="Icono instagram" className="w-6 h-6 mr-2"/>   
+            @vuelosdebautismo.bs.as
+            </Link>
+            <Link href="https://wa.me/1122223333?text=¡Hola!%20Estoy%20interesado%20en%20el%20vuelo%20bautismo." target="_blank" className="hover:underline flex " prefetch={false}>
+            <img src="/media/whatsapp.png" alt="Icono whatsapp" className="w-6 h-6 mr-2"/>   
+            1122223333
+            </Link>
           </div>
+          <p className="text-sm">&copy; 2024 Vuelo Bautismo. Todos los derechos reservados.</p>
         </div>
       </footer>
     </div>)
