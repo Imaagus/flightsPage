@@ -11,7 +11,6 @@ import { Textarea } from "@/components/ui/textarea"
 
 export function Main() {
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -73,7 +72,7 @@ export function Main() {
             <p className="text-black text-lg md:text-xl mb-8">
               Descubre la magia de pilotear una avioneta con un instructor experto.
             </p>
-            <Button size="lg">Reservar Ahora</Button>
+            
         </div>
         </section>
         <section id="about" className="w-full py-16 md:py-24 bg-muted">

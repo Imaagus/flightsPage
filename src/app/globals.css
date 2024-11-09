@@ -71,3 +71,16 @@
   padding-left: 0; 
   padding-right: 0; 
 }
+#hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+#hero video {
+  width: 100vw;
+  height: 56.25vw; 
+  min-height: 100vh; 
+  object-fit: cover;
+  object-position: center;
+}
