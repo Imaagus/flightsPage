@@ -37,16 +37,12 @@ export function Main() {
         <div className="container mx-auto flex items-center justify-between">
           <Link href="#" className="flex items-center gap-2" prefetch={false}>
             <Icon />
-            
           </Link>
           <nav className="hidden md:flex items-center gap-6 flex-1 justify-center">
             <Link href="#" className="hover:underline" prefetch={false}>
-              Sobre Nosotros
-            </Link>
-            <Link href="#" className="hover:underline" prefetch={false}>
               La Experiencia
             </Link>
-            <Link href="#" className="hover:underline" prefetch={false}>
+            <Link href="#contact" className="hover:underline" prefetch={false}>
               Contacto
             </Link>
           </nav>
@@ -183,31 +179,33 @@ export function Main() {
                   </Button>
                 </form>
               </div>
-              <div>
+              <div className="ml-12">
                 <h3 className="text-2xl font-bold mb-4">Información de Contacto</h3>
-                <div className="space-y-4">
-                  <div className="flex items-center gap-4">
-                    <PhoneIcon className="w-6 h-6 text-primary" />
-                    <div>
-                      <p className="font-medium">Teléfono</p>
-                      <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                <div className="space-y-2 space-x-6 flex">
+                  <div className="space-y-6">
+                    <div className="flex items-center gap-4">
+                      <PhoneIcon className="w-6 h-6 text-primary" />
+                      <div>
+                        <p className="font-medium">Teléfono</p>
+                        <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-center gap-4">
+                      <MailIcon className="w-6 h-6 text-primary" />
+                      <div>
+                        <p className="font-medium">Correo Electrónico</p>
+                        <Link href="mailto:vuelosdebautismos@gmail.com" className="hover:underline text-muted-foreground" prefetch={false}>
+                          vuelosdebautismos@gmail.com
+                        </Link>
+                      </div>
                     </div>
                   </div>
-                  <div className="flex items-center gap-4">
-                    <MailIcon className="w-6 h-6 text-primary" />
-                    <div>
-                      <p className="font-medium">Correo Electrónico</p>
-                      <Link href="mailto:vuelosdebautismos@gmail.com" className="hover:underline text-muted-foreground" prefetch={false}>
-                        vuelosdebautismos@gmail.com
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <LocateIcon className="w-6 h-6 text-primary" />
+                  <div className="flex items-center !mt-0">
                     <div>
                       <p className="font-medium">Dirección</p>
                       <p className="text-muted-foreground">500 Av. Figueroa Alcorta, Moron.</p>
-                      <Map className="w-full py-12 md:py-20 "/>
+                      <Map className="w-full"/>
                     </div>
                   </div>
                 </div>
@@ -220,12 +218,14 @@ export function Main() {
         <div className="container mx-auto flex items-center justify-between">
           <p className="text-sm">&copy; 2024 Vuelo Bautismo. Todos los derechos reservados.</p>
           <div className="flex items-center gap-4">
-            <Link href="#" className="hover:underline" prefetch={false}>
-              Términos y Condiciones
-            </Link>
-            <Link href="#" className="hover:underline" prefetch={false}>
-              Política de Privacidad
-            </Link>
+          <Link href="https://www.instagram.com/vuelosdebautismo.bs.as/" target="_blank" className="hover:underline flex" prefetch={false}>
+          <img src="/media/instagram.png" alt="Icono instagram" className="w-6 h-6 mr-2"/>   
+          @vuelosdebautismo.bs.as
+          </Link>
+          <Link href="https://wa.me/1122223333?text=¡Hola!%20Estoy%20interesado%20en%20el%20vuelo%20bautismo." target="_blank" className="hover:underline flex " prefetch={false}>
+          <img src="/media/whatsapp.png" alt="Icono whatsapp" className="w-6 h-6 mr-2"/>   
+          1122223333
+          </Link>
           </div>
         </div>
       </footer>
@@ -247,29 +247,6 @@ function CheckIcon(props) {
       strokeLinecap="round"
       strokeLinejoin="round">
       <path d="M20 6 9 17l-5-5" />
-    </svg>)
-  );
-}
-
-
-function LocateIcon(props) {
-  return (
-    (<svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round">
-      <line x1="2" x2="5" y1="12" y2="12" />
-      <line x1="19" x2="22" y1="12" y2="12" />
-      <line x1="12" x2="12" y1="2" y2="5" />
-      <line x1="12" x2="12" y1="19" y2="22" />
-      <circle cx="12" cy="12" r="7" />
     </svg>)
   );
 }
@@ -345,12 +322,11 @@ function Icon(props){
  function Map() {
   return (
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.4286226647496!2d-58.64310113032706!3d-34.66191269521972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7527bbb5a65%3A0x9fe7f7f6b8275e14!2sAv.%20Figueroa%20Alcorta%20500%2C%20B1712%20Castelar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1731070769444!5m2!1ses!2sar" 
-      width="500px" 
-      height="300px" 
+      className="w-full h-64 md:h-80 lg:h-128 rounded-lg "
       style={{ border: 0 }}
-      allowfullscreen="" 
-      loading="lazy" 
-      referrerpolicy="no-referrer-when-downgrade">
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade">
       </iframe>
   );
 }
