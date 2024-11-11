@@ -39,7 +39,7 @@ export function Main() {
             <Icon />
           </Link>
           <nav className="hidden md:flex items-center gap-6 flex-1 justify-center">
-            <Link href="#" className="hover:underline" prefetch={false}>
+            <Link href="#service" className="hover:underline" prefetch={false}>
               La Experiencia
             </Link>
             <Link href="#contact" className="hover:underline" prefetch={false}>
@@ -47,14 +47,16 @@ export function Main() {
             </Link>
           </nav>
           <Button variant="secondary" size="sm">
-            Reservar Vuelo
+            <Link href="https://wa.me/1122223333?text=¡Hola!%20Estoy%20interesado%20en%20el%20vuelo%20bautismo." target="blank" prefetch={false}>
+              Reservar Vuelo
+            </Link>
           </Button>
         </div>
       </header>
       <main>
         <section  
           id="hero"
-          className="relative w-full py-16 md:py-24">
+          className="relative w-full min-h-[35vh] py-16 md:py-24">
           <video  
             autoPlay 
             loop 
@@ -64,31 +66,24 @@ export function Main() {
             <source src="/media/banner.mp4" type="video/mp4" />
           </video>
           <div className="relative container mx-auto px-4 sm:px-6 md:px-12 text-center z-10">
-            <h1 className="text-black text-3xl sm:text-4xl md:text-6xl font-bold mb-4">Vive la Emoción del Vuelo Bautismo</h1>
-            <p className="text-black text-lg md:text-xl mb-8">
-              Descubre la magia de pilotear una avioneta con un instructor experto.
-            </p>
-            
-        </div>
+            <h1 className="text-black text-3xl sm:text-4xl md:text-6xl font-bold">Vivi la Emoción de ser piloto por un dia</h1>
+          </div>
         </section>
         <section id="about" className="w-full py-16 md:py-24 bg-muted px-4 sm:px-8">
           <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <h2 className="text-3xl font-bold mb-4">¿Qué es un Vuelo Bautismo?</h2>
+                <h2 className="text-3xl font-bold mb-10">¿Qué es un Vuelo Bautismo?</h2>
                 <p className="text-muted-foreground mb-6">
-                  Un vuelo bautismo es una experiencia única donde las personas que nunca han pilotado una avioneta
-                  pueden tomar los controles y volar junto a un instructor experimentado. Es una oportunidad para vivir
-                  la emoción de ser piloto por un día.
+                  Son Experiencias diseñadas para aquellas personas que, sin conocer el mundo de la aviación, desean adentrarse en el y vivir la emoción de volar.
+                  Durante estos vuelos, los participantes aprenden los principios básicos del vuelo y podrán tomar los mandos del avión una vez en vuelo, todo bajo la guía del piloto.
                 </p>
                 <p className="text-muted-foreground mb-6">
-                  Durante el vuelo, el instructor te guiará a través de las maniobras básicas de pilotaje, como
-                  despegue, ascenso, virajes y aterrizaje. Tendrás la oportunidad de tomar los controles y sentir la
-                  adrenalina de volar.
+                  Esta experiencia única no solo es una oportunidad para descubrir la magia de volar, sino que también es el regalo perfecto para sorprender a alguien especial.
                 </p>
               </div>
               <div>
-                <h2 className="text-3xl font-bold mb-4">Beneficios del Vuelo Bautismo</h2>
+                <h2 className="text-3xl font-bold mb-10">Beneficios del Vuelo Bautismo</h2>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-4">
                     <CheckIcon className="w-6 h-6 text-primary" />
@@ -122,9 +117,28 @@ export function Main() {
             </div>
           </div>
         </section>
-        <section id="experience" className="w-full py-16 md:py-24 px-4 sm:px-8">
+        <section id="service"className="w-full py-16 md:py-24 px-4 sm:px-8">
           <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20">
-            <h2 className="text-3xl font-bold mb-8 text-center">La Experiencia del Vuelo Bautismo</h2>
+            <h2 className="text-3xl font-bold mb-10 text-center">Nuestros servicios</h2>
+            <div className="flex gap-8 grid grid-cols-1 md:grid-cols-3 m-4">
+              <div className="text-center space-y-2 ">
+                <h3 className="text-xl font-bold">Vuelo de bautismo</h3>
+                <p className="text-muted-foreground mb-6">Disfruta de una experiencia única si deseas volar por primera vez en un entorno seguro y controlado. Es la oportunidad perfecta para celebrar eventos especiales, como cumpleaños, o para sorprender a alguien con un regalo inolvidable.</p>
+              </div>
+              <div className="text-center space-y-2">
+                <h3 className="text-xl font-bold">Piloto por un dia</h3>
+                <p className="text-muted-foreground mb-6">Toma el control y experimenta la emoción de volar como un verdadero piloto. Con la supervision de nuestros expertos, vive la adrenalina de estar al mando y disfruta de una experiencia unica.</p>
+              </div>
+              <div className="text-center space-y-2">
+                <h3 className="text-xl font-bold">Vuelo Panoramico</h3>
+                <p className="text-muted-foreground mb-6">Vuela sobre los paisajes, ciudades y puntos de interés más hermosos de Buenos Aires. Nuestros paseos panorámicos ofrecen vistas inigualables y momentos de tranquilidad.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="experience" className="w-full pb-16 md:pb-24 px-4 sm:px-8">
+          <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-16 xl:px-20">
+            <h2 className="text-3xl font-bold mb-8 text-center">¿Qué incluye el vuelo bautismo?</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <img
@@ -136,18 +150,30 @@ export function Main() {
                   style={{ aspectRatio: "600/400", objectFit: "cover" }} />
               </div>
               <div>
-                <h3 className="text-2xl font-bold mb-4">Descubre el Placer de Volar</h3>
-                <p className="text-muted-foreground mb-6">
-                  Durante el vuelo bautismo, tendrás la oportunidad de tomar los controles de la avioneta y experimentar
-                  la emoción de pilotear. Bajo la supervisión de un instructor experimentado, aprenderás las maniobras
-                  básicas de vuelo, como despegue, ascenso, virajes y aterrizaje.
-                </p>
-                <p className="text-muted-foreground mb-6">
-                  Disfruta de una vista panorámica única mientras sobrevuelas la ciudad o el campo. Siente la adrenalina
-                  y la libertad de volar. Es una experiencia que te dejará con una sonrisa en el rostro y un recuerdo
-                  imborrable.
-                </p>
-                <Button size="lg">Reservar Vuelo</Button>
+                <h3 className="text-2xl font-bold mb-4">Descubri el Placer de Volar</h3>
+                
+                  <p className="text-muted-foreground mb-6">
+                  <b>• Recepción y bienvenida:</b> Incluye la recepción del participante en el aeródromo, una charla introductoria acerca de la actividad, y una explicación básica sobre el vuelo. 
+                  </p>
+                
+                  <p className="text-muted-foreground mb-6">
+                  <b>• Briefing Pre Vuelo:</b> Explicación detallada de las condiciones del vuelo e información sobre el recorrido. Por ultimo se hace una revisión de normas de seguridad y procedimientos de emergencia.  
+                  </p>
+                
+                  <p className="text-muted-foreground mb-6">
+                  <b>• Equipo y preparativos:</b> Entrega de auriculares, luego se hace una explicación sobre el uso del cinturón de seguridad. 
+                  </p>
+
+                  <p className="text-muted-foreground mb-6">
+                  <b>• Inspección de la aeronave:</b> Revisión externa e interna del avión junto al piloto.  
+                  </p>
+
+                  <p className="text-muted-foreground mb-6">
+                  <b>• Recuerdo para el participante:</b>Capturas de fotografías en calidad 4k y videos utilizando cámara GO PRO! en cabina. Al finalizar se entrega un certificado de vuelo firmado por el piloto y una fotografía de recuerdo con el avión. 
+                  </p>
+
+
+
               </div>
             </div>
           </div>
@@ -186,17 +212,27 @@ export function Main() {
                     <div className="flex items-center gap-4">
                       <PhoneIcon className="w-6 h-6 text-primary" />
                       <div>
-                        <p className="font-medium">Teléfono</p>
-                        <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                        <p className="font-medium">Whatsapp</p>
+                        <Link href="https://wa.me/1122223333?text=¡Hola!%20Estoy%20interesado%20en%20el%20vuelo%20bautismo." target="_blank" className="hover:underline text-muted-foreground " prefetch={false}>
+                        1122223333
+                        </Link>
                       </div>
                     </div>
-                    
                     <div className="flex items-center gap-4">
                       <MailIcon className="w-6 h-6 text-primary" />
                       <div>
                         <p className="font-medium">Correo Electrónico</p>
                         <Link href="mailto:vuelosdebautismos@gmail.com" className="hover:underline text-muted-foreground" prefetch={false}>
-                          vuelosdebautismos@gmail.com
+                        vuelosdebautismos@gmail.com
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-4">
+                      <InstagramIcon className="w-6 h-6 text-primary"/>
+                      <div>
+                        <p className="font-medium">Instagram</p>
+                        <Link href="https://www.instagram.com/vuelosdebautismo.bs.as/" target="_blank" className="hover:underline text-muted-foreground" prefetch={false}> 
+                        @vuelosdebautismo.bs.as
                         </Link>
                       </div>
                     </div>
@@ -215,18 +251,8 @@ export function Main() {
         </section>
       </main>
       <footer className="w-full bg-primary text-primary-foreground py-6 px-6 md:px-12">
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-4">
-            <Link href="https://www.instagram.com/vuelosdebautismo.bs.as/" target="_blank" className="hover:underline flex" prefetch={false}>
-            <img src="/media/instagram.png" alt="Icono instagram" className="w-6 h-6 mr-2"/>   
-            @vuelosdebautismo.bs.as
-            </Link>
-            <Link href="https://wa.me/1122223333?text=¡Hola!%20Estoy%20interesado%20en%20el%20vuelo%20bautismo." target="_blank" className="hover:underline flex " prefetch={false}>
-            <img src="/media/whatsapp.png" alt="Icono whatsapp" className="w-6 h-6 mr-2"/>   
-            1122223333
-            </Link>
-          </div>
-          <p className="text-sm">&copy; 2024 Vuelo Bautismo. Todos los derechos reservados.</p>
+        <div className="container mx-auto  md:flex-row items-center justify-between gap-4">
+        <p className="text-sm text-center">&copy; 2024 Vuelo Bautismo. Todos los derechos reservados.</p>
         </div>
       </footer>
     </div>)
@@ -251,6 +277,26 @@ function CheckIcon(props) {
   );
 }
 
+function InstagramIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+      <path d="M16 11.37a4 4 0 1 1-4.63-4.63 4 4 0 0 1 4.63 4.63z" />
+      <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
+    </svg>
+  );
+}
 
 function MailIcon(props) {
   return (
@@ -291,25 +337,6 @@ function PhoneIcon(props) {
   );
 }
 
-
-function PlaneIcon(props) {
-  return (
-    (<svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round">
-      <path
-        d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" />
-    </svg>)
-  );
-}
 
 
 function Icon(props){
