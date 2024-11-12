@@ -47,7 +47,7 @@ export function Main() {
             </Link>
           </nav>
           <Button variant="secondary" size="sm">
-            <Link href="https://wa.me/1122223333?text=¡Hola!%20Estoy%20interesado%20en%20el%20vuelo%20bautismo." target="blank" prefetch={false}>
+            <Link href="https://wa.me/+5491171210438?text=¡Hola!%20Estoy%20interesado%20en%20el%20vuelo%20bautismo." target="blank" prefetch={false}>
               Reservar Vuelo
             </Link>
           </Button>
@@ -171,9 +171,6 @@ export function Main() {
                   <p className="text-muted-foreground mb-6">
                   <b>• Recuerdo para el participante:</b>Capturas de fotografías en calidad 4k y videos utilizando cámara GO PRO! en cabina. Al finalizar se entrega un certificado de vuelo firmado por el piloto y una fotografía de recuerdo con el avión. 
                   </p>
-
-
-
               </div>
             </div>
           </div>
@@ -213,8 +210,8 @@ export function Main() {
                       <PhoneIcon className="w-6 h-6 text-primary" />
                       <div>
                         <p className="font-medium">Whatsapp</p>
-                        <Link href="https://wa.me/1122223333?text=¡Hola!%20Estoy%20interesado%20en%20el%20vuelo%20bautismo." target="_blank" className="hover:underline text-muted-foreground " prefetch={false}>
-                        1122223333
+                        <Link href="https://wa.me/+5491171210438?text=¡Hola!%20Estoy%20interesado%20en%20el%20vuelo%20bautismo." target="_blank" className="hover:underline text-muted-foreground " prefetch={false}>
+                        +54 9 11-7121-0438
                         </Link>
                       </div>
                     </div>
