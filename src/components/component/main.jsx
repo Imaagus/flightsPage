@@ -191,7 +191,7 @@ export function Main() {
                   </div>
                   <div>
                     <Label htmlFor="phone">Teléfono</Label>
-                    <Input id="phone" type="tel" placeholder="Ingresa tu teléfono" required />
+                    <Input id="phone" name="user_phone" type="tel" placeholder="Ingresa tu teléfono" required />
                   </div>
                   <div>
                     <Label htmlFor="message">Mensaje</Label>
