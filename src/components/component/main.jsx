@@ -1,8 +1,6 @@
 "use client";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import icono from "@/media/Icono.png"
-import avioneta from "@/media/Avioneta.jpg"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
@@ -36,7 +34,7 @@ export function Main() {
       <header className="w-full bg-primary text-primary-foreground py-0 px-6 md:px-12">
         <div className="container mx-auto flex items-center justify-between">
           <Link href="#" className="flex items-center gap-2" prefetch={false}>
-            <Icon />
+            <img src="/media/icono.png" alt="Icono" width={125} height={100} />
           </Link>
           <nav className="hidden md:flex items-center gap-6 flex-1 justify-center">
             <Link href="#service" className="hover:underline" prefetch={false}>
@@ -142,7 +140,7 @@ export function Main() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <img
-                  src= {avioneta.src}
+                  src="/media/Avioneta.jpg"
                   width={600}
                   height={400}
                   alt="Vuelo Bautismo"
@@ -336,11 +334,6 @@ function PhoneIcon(props) {
 
 
 
-function Icon(props){
-  return (
-    <img src={icono.src} alt="Icono" width={125} height={100} />
-  );
-}
 
 
  function Map() {
