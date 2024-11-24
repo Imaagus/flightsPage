@@ -8,7 +8,7 @@ export function Navbar (){
     return(
         <div className="container mx-auto flex items-center justify-between">
         <Link href="#" className="flex items-center gap-2" prefetch={false}>
-          <Image src="/media/icono.png" alt="Icono" width={125} height={100} />
+          <Image src="/media/Icono.png" alt="Icono" width={125} height={100} />
         </Link>
         <nav className="hidden md:flex items-center gap-6 flex-1 justify-center">
           <Link href="#service" className="hover:underline" prefetch={false}>
